@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-transform: uppercase;
+    background: linear-gradient(18deg, rgba(63, 94, 251, 1) 0%, rgba(255, 37, 81, 1) 100%);
+}
+
+h1 {
+
+    color: aliceblue;
+}
+
+h1:hover {
+    text-shadow: 0px -1px 7px rgb(0 0 0 / 44%);
+}
+
+small {
+    color: #555353ac;
+}
+
+#extra-small-device {
+    display: none;
+}
+
+#small-device {
+    display: none;
+}
+
+#tab-device {
+    display: none;
+}
+
+#leptop-device {
+    display: none;
+}
+
+#small-desktop-device {
+    display: none;
+}
+
+#large-desktop-device {
+    display: none;
+}
+
+#exlarge-desktop-device {
+    display: none;
+}
+
+span {
+    text-decoration: underline;
+    color: rgba(110, 110, 110, 0.84);
+}
+
+#copywrite {
+    color: #0303032b;
+    text-transform: capitalize;
+}
+
+/*Extra Small Device  */
+@media screen and (max-width:576px) {
+    body {
+        background: linear-gradient(18deg, rgb(129, 251, 63) 0%, rgb(255, 37, 164) 100%);
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #extra-small-device {
+        display: block;
+    }
+
+
+}
+
+/* Small Device  */
+@media screen and (min-width:577px) and (max-width:767px) {
+    body {
+        background: linear-gradient(180deg, rgb(63, 232, 251) 0%, rgb(131, 37, 255) 100%);
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #small-device {
+        display: block;
+    }
+
+}
+
+/* Medium/small tab device  */
+@media screen and (min-width:768px) and (max-width:991px) {
+    body {
+        background: linear-gradient(0deg, rgb(251, 179, 63) 0%, rgb(70, 255, 37) 100%);
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    #tab-device {
+        display: block;
+    }
+}
+
+/* Large tab/small leptop device(8-12 inchi)  */
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body {
+        background: linear-gradient(0deg, rgb(251, 163, 63) 0%, rgb(37, 102, 255) 100%);
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    #leptop-device {
+        display: block;
+    }
+}
+
+/* Big leptop/small screen desktop device(14-18 inchi)  */
+@media screen and (min-width:1201px) and (max-width:1380px) {
+    body {
+        background: linear-gradient(0deg, rgb(213, 63, 251) 0%, rgb(37, 102, 255) 100%);
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    #small-desktop-device {
+        display: block;
+    }
+}
+
+/* Large screen desktop(19-24 inchi)  */
+@media screen and (min-width:1381px) and (max-width:1920px) {
+    body {
+        background: linear-gradient(0deg, rgb(85, 251, 63) 0%, rgb(164, 37, 255) 100%);
+    }
+
+    h1 {
+        font-size: 6em;
+    }
+
+    #large-desktop-device {
+        display: block;
+    }
+}
+
+/* Extra Large Screen (24 inchi plus)  */
+@media screen and (min-width:1921px) {
+    body {
+        background: linear-gradient(0deg, rgb(235, 147, 147) 0%, rgb(189, 57, 161));
+    }
+
+    h1 {
+        font-size: 8em;
+    }
+
+    #exlarge-desktop-device {
+        display: block;
+    }
+}
